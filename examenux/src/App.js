@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Primera impresion de nuestra pagina web examen de UX </p>
+          ¡Hola, mundo cruel! </p>
         
       </header>
     </div>
