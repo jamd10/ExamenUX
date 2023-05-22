@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const items = [
     {
         src: '/img/img1.jpg',
-        altText: 'Slide 1',
+        altText: 'Experiencia del usuario',
         caption: 'Slide 1'
     },
     {
@@ -74,7 +74,7 @@ class Example extends Component {
                     key={item.src}
                 >
                     <img src={item.src} alt={item.altText} style={{ width: '100%', height: '900px' }} />
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                    <CarouselCaption captionText={item.caption} captionHeader={item.altText} />
                 </CarouselItem>
             );
         });
