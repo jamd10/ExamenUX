@@ -20,10 +20,10 @@ const items = [
     src: '/img/img3.jpg'
   },
   {
-    src: '/img/img4.jpg'
+    src: '/img/img4.gif'
   },
   {
-    src: '/img/img5.jpg'
+    src: '/img/img5.gif'
   }
 ];
 
