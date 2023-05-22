@@ -3,7 +3,9 @@ import Navbar from './components/Navbar';
 import React from 'react';
 import Carrusel from './Carrusel';
 import ReactCard from './ReactCard';
-import './card.css'; // Importar el archivo CSS para los estilos personalizados de las tarjetas
+import './card.css';
+import Footer from './Footer';
+
 function App() {
   const cards = [
     {
@@ -32,17 +34,17 @@ function App() {
         <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '20px', width: '100%' }}>
           <h1 style={{ color: 'white', fontSize: '48px', textAlign: 'center' }}>¿Qué es la experiencia de usuario?</h1>
         </div>
-
       </div>
+
       <div className="card-container">
         {cards.map((card, index) => (
           <ReactCard key={index} image={card.image} content={card.content} />
         ))}
       </div>
+
+      <Footer />
     </>
   );
 }
-
-
 
 export default App;
