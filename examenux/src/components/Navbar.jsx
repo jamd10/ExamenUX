@@ -21,7 +21,7 @@ function Navbar() {
                     />
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a onClick={handleClick} href="#h">Inicio</a>
+                    <a onClick={handleClick} href="#">Inicio</a>
                     <a onClick={handleClick} href="#h">informacion</a>
                     <a onClick={handleClick} href="#h">Contacto</a>
                     <a onClick={handleClick} href="#h">iniciar sesion</a>
