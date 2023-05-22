@@ -36,11 +36,12 @@ function App() {
         </div>
       </div>
 
-      <div className="card-container">
+      <div id="card-container" className="card-container">
         {cards.map((card, index) => (
           <ReactCard key={index} image={card.image} content={card.content} />
         ))}
       </div>
+
 
       <Footer />
     </>

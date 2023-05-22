@@ -4,35 +4,35 @@ import BurguerButton from './BurguerButton'
 import logo from '../img/logo.png';
 function Navbar() {
 
-    const [clicked, setClicked] = useState(false)
-    const handleClick = () => {
-        //cuando esta true lo pasa a false y vice versa
-        setClicked(!clicked)
-    }
-    return (
-        <>
-            <NavContainer>
-                <div>
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        style={{ width: '35px', height: '35px', cursor: 'pointer' }}
-                        onClick={handleClick}
-                    />
-                </div>
-                <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a onClick={handleClick} href="#">Inicio</a>
-                    <a onClick={handleClick} href="#h">informacion</a>
-                    <a onClick={handleClick} href="#h">Contacto</a>
-                    <a onClick={handleClick} href="#h">iniciar sesion</a>
-                </div>
-                <div className='burguer'>
-                    <BurguerButton clicked={clicked} handleClick={handleClick} />
-                </div>
-                <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
-            </NavContainer>
-        </>
-    )
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    //cuando esta true lo pasa a false y vice versa
+    setClicked(!clicked)
+  }
+  return (
+    <>
+      <NavContainer>
+        <div>
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ width: '35px', height: '35px', cursor: 'pointer' }}
+            onClick={handleClick}
+          />
+        </div>
+        <div className={`links ${clicked ? 'active' : ''}`}>
+          <a onClick={handleClick} href="#">Inicio</a>
+          <a href="#card-container" onClick={handleClick}>informacion</a>
+          <a href="Main.html" onClick={handleClick}>Estudiantes</a>
+          <a onClick={handleClick} href="#h">iniciar sesion</a>
+        </div>
+        <div className='burguer'>
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+      </NavContainer>
+    </>
+  )
 }
 
 export default Navbar
