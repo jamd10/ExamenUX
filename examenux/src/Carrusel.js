@@ -10,19 +10,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const items = [
   {
-    src: '/img/img1.jpg',
-    altText: 'Experiencia del usuario',
-    caption: 'Slide 1'
+    src: '/img/img1.jpg'
   },
   {
-    src: '/img/img2.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: '/img/img2.jpg'
+    
   },
   {
-    src: '/img/img3.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: '/img/img3.jpg'
+  },
+  {
+    src: '/img/img4.jpg'
+  },
+  {
+    src: '/img/img5.jpg'
   }
 ];
 
