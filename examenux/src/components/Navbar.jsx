@@ -24,7 +24,7 @@ function Navbar() {
           <a onClick={handleClick} href="#">Inicio</a>
           <a href="#card-container" onClick={handleClick}>informacion</a>
           <a href="Main.html" onClick={handleClick}>Estudiantes</a>
-          <a onClick={handleClick} href="#h">iniciar sesion</a>
+          <a onClick={handleClick} href="Padres.html">Padres</a>
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
