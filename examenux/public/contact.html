@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -10,11 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="Padres/assets/img/favicon.png" rel="icon">
-  <link href="Padres/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="logo.png" rel="icon">
+  <link href="logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="Padres/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -47,6 +49,7 @@
           <li><a href="about.html">Resultados</a></li>
           <li><a href="services.html">Informacion</a></li>
           <li><a class="active" href="contact.html">Contacto</a></li>
+          <li><a href="index.html">Pagina principal</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -56,96 +59,99 @@
 
   <main id="main">
 
-   <!-- ======= Contact Section ======= -->
-   <section class="breadcrumbs">
-    <div class="container">
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
 
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Contacto</h2>
-        <ol>
-          <li><a href="index.html">Inicio</a></li>
-          <li>Contacto</li>
-        </ol>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Contacto</h2>
+          <ol>
+            <li><a href="Padres.html">Inicio</a></li>
+            <li>Contacto</li>
+          </ol>
+        </div>
+
       </div>
+    </section><!-- End Contact Section -->
 
-    </div>
-  </section><!-- End Contact Section -->
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
 
-  <!-- ======= Contact Section ======= -->
-  <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-    <div class="container">
+        <div class="row">
 
-      <div class="row">
+          <div class="col-lg-6">
 
-        <div class="col-lg-6">
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="info-box">
-                <i class="bx bx-map"></i>
-                <h3>Dirección</h3>
-                <p>Tegucigalpa, Honduras</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Dirección</h3>
+                  <p>Tegucigalpa, Honduras</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Correo</h3>
+                  <p>padres@example.com<br>padres@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Celular</h3>
+                  <p>+504 9636-5696<br>+504 9636-5696</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bx bx-envelope"></i>
-                <h3>Correo</h3>
-                <p>padres@example.com<br>padres@example.com</p>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su Correo" required>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="info-box">
-                <i class="bx bx-phone-call"></i>
-                <h3>Celular</h3>
-                <p>+504 9636-5696<br>+504 9636-5696</p>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
               </div>
-            </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje a sido enviado!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
           </div>
 
         </div>
 
-        <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Su Correo" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Tu mensaje a sido enviado!</div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
-          </form>
-        </div>
-
       </div>
-
-    </div>
-  </section><!-- End Contact Section -->
+    </section><!-- End Contact Section -->
 
     <!-- ======= Map Section ======= -->
     <section class="map mt-2">
       <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1932.863149898306!2d-88.1565438!3d14.3273245!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1684738781833!5m2!1ses-419!2shn" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1932.863149898306!2d-88.1565438!3d14.3273245!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2shn!4v1684738781833!5m2!1ses-419!2shn"
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section><!-- End Map Section -->
 
   </main><!-- End #main -->
 
-   <!-- ======= Footer ======= -->
-   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
     <div class="footer-newsletter">
       <div class="container">
@@ -164,17 +170,18 @@
       <div class="container">
         <div class="row">
 
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Jesús Meraz & Sahory Herrera</span></strong>. All Rights Reserved
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Jesús Meraz & Sahory Herrera</span></strong>. All Rights Reserved
+        </div>
       </div>
-    </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="Padres/assets/vendor/purecounter/purecounter_vanilla.js"></script>

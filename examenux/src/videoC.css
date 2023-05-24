@@ -1,0 +1,102 @@
+.video-container {
+  background-image: url('img/Fondo2.jpg');
+  width: 100%;
+  min-height: 550px;
+  /* Cambiamos height a min-height para permitir que crezca según el contenido */
+  align-items: center;
+  text-align: left;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Trade Gothic LT Std", sans-serif;
+  overflow: hidden;
+  /* Agregamos overflow: hidden para recortar el contenido si excede el tamaño */
+}
+
+/* Resto del código sin cambios */
+
+
+.title-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.title {
+  color: white;
+  animation: colorChange 25s infinite, bounce 5s infinite;
+  /* Animaciones de cambio de color y bounce */
+}
+
+@keyframes colorChange {
+  0% {
+    color: rgb(255, 255, 255);
+    /* blanco */
+  }
+
+  20% {
+    color: rgba(0, 255, 0, 1);
+    /* Verde */
+  }
+
+  40% {
+    color: rgba(0, 0, 255, 1);
+    /* Azul */
+  }
+
+  60% {
+    color: rgba(255, 255, 0, 1);
+    /* Amarillo */
+  }
+
+  80% {
+    color: rgba(255, 0, 255, 1);
+    /* Magenta */
+  }
+
+  100% {
+    color: rgba(0, 255, 255, 1);
+    /* Cian */
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.video {
+  width: 48%;
+  height: 400px;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}

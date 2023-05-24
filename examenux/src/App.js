@@ -5,7 +5,11 @@ import Carrusel from './Carrusel';
 import ReactCard from './ReactCard';
 import './card.css';
 import Footer from './Footer';
-
+import VideoContainer from './VideoContainer';
+import DCU from './DCU';
+import Acordeon from './acordeon.js';
+import Galeria from './Galeria';
+import Icons from './icons';
 function App() {
   const cards = [
     {
@@ -42,7 +46,17 @@ function App() {
         ))}
       </div>
 
-
+      <VideoContainer />
+      <div>
+        <DCU />
+      </div>
+      <div>
+        <Acordeon />
+      </div>
+      <div>
+        <Galeria />
+      </div>
+      <Icons />
       <Footer />
     </>
   );

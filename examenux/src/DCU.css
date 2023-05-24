@@ -1,0 +1,74 @@
+.dcu-container {
+  display: flex;
+  background-image: url('glitch.gif');
+  width: 100%;
+  text-align: left;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Trade Gothic LT Std", sans-serif;
+}
+
+.dcu-image {
+  flex: 1;
+}
+
+.dcu-image img {
+  width: 100%;
+  height: auto;
+}
+
+.dcu-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(97, 0, 153, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.dcu-info p {
+  font-size: 1.2em;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.7), 0 0 7px rgba(255, 255, 255, 0.9);
+}
+
+.dcu-info:hover {
+  background-color: rgba(162, 0, 255, 0.5);
+  color: aquamarine;
+}
+
+@media (max-width: 768px) {
+  .dcu-container {
+    flex-direction: column;
+  }
+
+  .dcu-image {
+    order: 1;
+    /* Cambiamos el orden para que aparezca arriba en dispositivos móviles */
+    margin-bottom: 20px;
+    /* Agregamos margen inferior para separar de la información */
+  }
+
+  .dcu-info {
+    order: 2;
+    /* Cambiamos el orden para que aparezca debajo en dispositivos móviles */
+  }
+}
